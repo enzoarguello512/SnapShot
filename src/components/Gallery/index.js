@@ -1,13 +1,13 @@
 import React from "react";
 import NoImages from "./NoImages";
 import Image from "./Image";
-const Gallery = props => {
+const Gallery = (props) => {
   const results = props.data;
   let images;
   let noImages;
   // map variables to each item in fetched image array and return image component
   if (results.length > 0) {
-    images = results.map(image => {
+    images = results.map((image) => {
       let farm = image.farm;
       let server = image.server;
       let id = image.id;
